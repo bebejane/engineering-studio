@@ -8,9 +8,6 @@ export default function Home() {
     <>
       <Head>
         <title>Engineering Studio – About</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <p className={s.pdfs}>
         <Link href="/docs/Services_Dipl._Ing.A.meister_dt.pdf"><GrDocumentPdf /> Leistungen</Link> <br />

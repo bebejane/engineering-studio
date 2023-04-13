@@ -18,16 +18,11 @@ export default function Home() {
 
   const [index, setIndex] = useState(0)
   const swiperRef = useRef<Swiper | null>(null)
-  const containerRef = useRef<HTMLDivElement | null>(null)
-
 
   return (
     <>
       <Head>
-        <title>Engineering Studio – Qualitätssicherung Photovoltaikanlagen</title>
-        <meta name="description" content="Qualitätssicherung Photovoltaikanlagen" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Engineering Studio</title>
       </Head>
       <SwiperReact
         id={`swiper-wrap`}
