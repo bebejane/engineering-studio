@@ -11,7 +11,7 @@
 
   main {
     margin-top: 2rem;
-    margin-left: calc(0.5rem);
+    margin-left: calc(0.7rem);
 
     @include mq($until: tablet) {}
   }

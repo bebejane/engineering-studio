@@ -47,20 +47,19 @@
     appearance: none !important;
     outline: none;
     border: 0;
-    font-size: 2rem;
+    font-size: 4rem;
     box-shadow: none;
     color: var(--gray);
     background-color: transparent !important;
+    cursor: pointer;
   }
-
-
 }
 
 .next {
-  right: var(--outer-margin);
+  right: calc(var(--outer-margin) / 2);
 }
 
 .prev {
-  left: var(--outer-margin);
+  left: calc(var(--outer-margin) / 2);
 
 }

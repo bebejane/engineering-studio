@@ -34,7 +34,7 @@
 
     h1 {
       text-align: left;
-      font-size: 1rem;
+      line-height: 1.05em;
       font-weight: normal;
       border: 0;
       padding: 0;
@@ -58,15 +58,10 @@
 .subtitle {
   margin-top: 0rem;
 
-  //margin-left: calc(0.5rem + 3px);
-
   h2 {
     mix-blend-mode: difference;
     font-weight: normal;
-    color: var(--white);
-    font-size: 0.7rem;
-    opacity: 0.7;
-    //font-style: italic;
+    color: var(--gray-dark);
   }
 
   @include mq($until: tablet) {}

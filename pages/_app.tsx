@@ -3,6 +3,7 @@ import Menu from '@/components/Menu'
 import '/styles/index.scss'
 import s from './_app.module.scss'
 import type { AppProps } from 'next/app'
+import Grid from '@/components/Grid'
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </main>
       </div>
+      <Grid />
     </>
   )
 }
