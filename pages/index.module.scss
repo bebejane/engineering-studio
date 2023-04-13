@@ -11,6 +11,12 @@
     width: 100%;
     height: 100vh;
     cursor: pointer;
+
+    @include mq($until: tablet) {
+      &.left {
+        object-position: left;
+      }
+    }
   }
 }
 
