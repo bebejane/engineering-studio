@@ -52,10 +52,10 @@ export default function Home() {
       </SwiperReact>
 
       <div className={s.prev}>
-        <span onClick={() => swiperRef.current?.slidePrev()}>‹</span>
+        <button onClick={() => swiperRef.current?.slidePrev()}>‹</button>
       </div>
       <div className={s.next}>
-        <span onClick={() => swiperRef.current?.slideNext()}>›</span>
+        <button onClick={() => swiperRef.current?.slideNext()}>›</button>
       </div>
     </>
   )

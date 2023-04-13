@@ -29,7 +29,7 @@
   justify-content: center;
   height: 100%;
   padding: 1rem;
-  font-size: 2rem;
+
   color: var(--white);
   cursor: pointer;
   transition: opcity 0.3s ease;
@@ -42,6 +42,18 @@
   &:hover {
     opacity: 1;
   }
+
+  button {
+    appearance: none !important;
+    outline: none;
+    border: 0;
+    font-size: 2rem;
+    box-shadow: none;
+    color: var(--gray);
+    background-color: transparent !important;
+  }
+
+
 }
 
 .next {
