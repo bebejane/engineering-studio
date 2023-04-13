@@ -1,0 +1,15 @@
+.pdfs {
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    svg {
+      margin-right: 0.3em;
+    }
+  }
+}
+
+.contact {
+  margin-top: 2rem;
+}

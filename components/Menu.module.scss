@@ -1,0 +1,76 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    flex: 0 0 calc(35% - 1rem);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+    border-top: 1px solid var(--black);
+
+    &:hover,
+    &.selected {
+      border-width: 3px;
+    }
+  }
+
+  .logo {
+
+    border: 0;
+    border-left: 3px solid var(--black);
+    flex: 0 0 calc(30%);
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+
+    padding-left: 0.5rem;
+
+    h1 {
+      text-align: left;
+      font-size: 1rem;
+      font-weight: normal;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+    }
+  }
+
+  @include mq($until: tablet) {
+    .logo {
+      flex: 0 0 100%;
+      margin-bottom: 2rem;
+
+    }
+
+    a {
+      flex: 0 0 calc(50% - 1rem);
+    }
+  }
+}
+
+.subtitle {
+  margin-top: 0rem;
+
+  //margin-left: calc(0.5rem + 3px);
+
+  h2 {
+    mix-blend-mode: difference;
+    font-weight: normal;
+    color: var(--white);
+    font-size: 0.7rem;
+    opacity: 0.7;
+    //font-style: italic;
+  }
+
+  @include mq($until: tablet) {}
+
+}

@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq($until: tablet) {
+    max-width: calc(100% - calc(var(--outer-margin) *2));
+  }
+
+  main {
+    margin-top: 2rem;
+    margin-left: 0.3rem;
+  }
+}
