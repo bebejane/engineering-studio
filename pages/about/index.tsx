@@ -23,7 +23,7 @@ export default function Home() {
       <p>
         Torstr. 101<br />
         10119 Berlin<br />
-        <a href="mailto:meister@engineering-studio.de">meister@engineering-studio.de</a>
+        <a href="mailto:a.meister@engineering-studio.de">a.meister@engineering-studio.de</a>
       </p>
     </>
   )
