@@ -51,7 +51,6 @@ export default function Home() {
 					</SwiperSlide>
 				))}
 			</SwiperReact>
-
 			<div className={s.prev}>
 				<button onClick={() => swiperRef.current?.slidePrev()}>‹</button>
 			</div>
