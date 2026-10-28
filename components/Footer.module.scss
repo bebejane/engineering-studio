@@ -1,0 +1,11 @@
+.footer {
+	margin-top: 2rem;
+	text-align: center;
+	border-top: 1px solid var(--gray-dark);
+	padding-top: 1rem;
+	padding-bottom: calc(2rem + 80px);
+
+	@include mq($from: tablet) {
+		display: none;
+	}
+}

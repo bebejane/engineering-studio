@@ -1,65 +1,67 @@
+.wrapper {
+	width: 100%;
+	height: 100vh;
+}
 .swiper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
 
-  .image {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    cursor: pointer;
+	.image {
+		object-fit: cover;
+		width: 100%;
+		height: 100vh;
+		cursor: pointer;
 
-    @include mq($until: tablet) {
-      &.left {
-        object-position: left;
-      }
-    }
-  }
+		@include mq($until: tablet) {
+			&.left {
+				object-position: left;
+			}
+		}
+	}
 }
 
 .next,
 .prev {
-  position: fixed;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 1rem;
+	position: fixed;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 1rem;
 
-  color: var(--white);
-  cursor: pointer;
-  transition: opcity 0.3s ease;
+	color: var(--white);
+	cursor: pointer;
+	transition: opcity 0.3s ease;
 
-  @include mq($until: tablet) {
-    opacity: 1;
-  }
+	@include mq($until: tablet) {
+		opacity: 1;
+	}
 
+	&:hover {
+		opacity: 1;
+	}
 
-  &:hover {
-    opacity: 1;
-  }
-
-  button {
-    appearance: none !important;
-    outline: none;
-    border: 0;
-    font-size: 4rem;
-    box-shadow: none;
-    color: var(--gray);
-    background-color: transparent !important;
-    cursor: pointer;
-  }
+	button {
+		appearance: none !important;
+		outline: none;
+		border: 0;
+		font-size: 4rem;
+		box-shadow: none;
+		color: var(--gray);
+		background-color: transparent !important;
+		cursor: pointer;
+	}
 }
 
 .next {
-  right: calc(var(--outer-margin) / 2 - 1rem);
+	right: calc(var(--outer-margin) / 2 - 1rem);
 }
 
 .prev {
-  left: calc(var(--outer-margin) / 2 - 1rem);
-
+	left: calc(var(--outer-margin) / 2 - 1rem);
 }
