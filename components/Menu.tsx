@@ -18,7 +18,7 @@ export default function Menu() {
 							Anne Meister
 						</h1>
 						<div className={s.subtitle}>
-							<h2>Netzanschlussverfahren Photovoltaik</h2>
+							<h2>Qualitätssicherung und Netzanschlussverfahren</h2>
 						</div>
 					</Link>
 				</div>

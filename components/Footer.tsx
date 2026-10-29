@@ -10,7 +10,7 @@ export default function Footer() {
 			<p>
 				Dipl.-Ing. (FH) Anne Meister und Team
 				<br />
-				Senior Expertin Qualitätsmanagement und Netzanschlussverfahren Photovoltaik
+				Projektingenieurin / Senior Expertin
 			</p>
 			<p>
 				<a href='tel:+491753778878'>+491753778878</a>

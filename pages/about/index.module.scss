@@ -34,7 +34,8 @@
 				li {
 					cursor: pointer;
 				}
-				li.selected {
+				li.selected,
+				li:hover {
 					font-weight: bold;
 				}
 			}
@@ -73,24 +74,53 @@
 	}
 }
 
-.female {
+.logos {
 	position: fixed;
 	right: 0;
 	bottom: 0;
-	width: 100px;
-	height: 100px;
-	margin: calc(var(--outer-margin) * 2);
-	@include mq($until: tablet) {
-		width: 80px;
-		height: 80px;
+	display: flex;
+	flex-direction: row;
+	margin: calc(var(--outer-margin) * 4);
+	.dgs {
+		height: 100px;
+		margin-right: 2rem;
+	}
+	.female {
+		width: 100px;
+		height: 100px;
+
+		@include mq($until: tablet) {
+			width: 80px;
+			height: 80px;
+		}
 	}
 }
 
 .elogo {
 	position: relative;
 	height: 100px;
-	margin-top: 1rem;
+	margin-top: 2rem;
 	@include mq($until: tablet) {
 		height: 80px;
+	}
+}
+
+.impressum {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	margin: calc(var(--outer-margin) * 4);
+	margin-bottom: var(--outer-margin);
+	font-size: 0.6rem;
+
+	span {
+		&:hover {
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+	@include mq($until: tablet) {
 	}
 }

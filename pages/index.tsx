@@ -10,7 +10,6 @@ import { useState, useRef } from 'react';
 const images = [
 	{ path: '/images/home/1.jpg', width: 3888, height: 2592, left: true },
 	{ path: '/images/home/2.jpg', width: 3072, height: 2304 },
-	{ path: '/images/home/3.jpg', width: 1711, height: 1116 },
 	{ path: '/images/home/4.jpg', width: 1600, height: 1200 },
 	{ path: '/images/home/5.jpg', width: 4320, height: 3240 },
 	{ path: '/images/home/6.jpg', width: 5504, height: 3096 },

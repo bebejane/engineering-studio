@@ -6,7 +6,7 @@
 	--background: var(--gray);
 	--foreground: var(--black);
 	--outer-margin: 1rem;
-	--logo-width: 300px;
+	--logo-width: 400px;
 
 	@include mq($from: tablet) {
 	}
@@ -40,6 +40,7 @@ body {
 
 main {
 	position: relative;
+	font-size: 13px;
 }
 
 ::-webkit-scrollbar {
