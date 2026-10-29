@@ -20,6 +20,9 @@ export default function Footer() {
 				<br />
 				Engineering Studio - Berlin
 			</p>
+			<p>
+				<img src={'/images/engineering-studio-logo.svg'} className={s.elogo} />
+			</p>
 		</footer>
 	);
 }

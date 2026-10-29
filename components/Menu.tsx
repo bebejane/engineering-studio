@@ -3,9 +3,18 @@ import cn from 'classnames';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useRef, useEffect } from 'react';
+import type { MouseEvent } from 'react';
 
 export default function Menu() {
-	const { asPath } = useRouter();
+	const { pathname } = useRouter();
+
+	const handleClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
+		if (pathname !== href) return;
+
+		e.preventDefault();
+		window.history.pushState(null, '', href);
+		window.dispatchEvent(new HashChangeEvent('hashchange'));
+	};
 
 	return (
 		<>
@@ -23,13 +32,25 @@ export default function Menu() {
 					</Link>
 				</div>
 				<div className={s.right}>
-					<Link href={'/'} className={cn(asPath === '/' && s.selected)}>
+					<Link
+						href={'/'}
+						className={cn(pathname === '/' && s.selected)}
+						onClick={(e) => handleClick(e, '/')}
+					>
 						Home
 					</Link>
-					<Link href={'/news'} className={cn(asPath === '/news' && s.selected)}>
+					<Link
+						href={'/news'}
+						className={cn(pathname === '/news' && s.selected)}
+						onClick={(e) => handleClick(e, '/news')}
+					>
 						News
 					</Link>
-					<Link href={'/about'} className={cn(asPath === '/about' && s.selected)}>
+					<Link
+						href={'/about'}
+						className={cn(pathname === '/about' && s.selected)}
+						onClick={(e) => handleClick(e, '/about')}
+					>
 						About
 					</Link>
 				</div>

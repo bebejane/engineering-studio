@@ -25,7 +25,6 @@
 				@include mq($until: tablet) {
 					flex-direction: row;
 					width: 100%;
-					justify-content: center;
 					margin-bottom: 1rem;
 					li {
 						margin: 0.3rem;
@@ -80,7 +79,9 @@
 	bottom: 0;
 	display: flex;
 	flex-direction: row;
+
 	margin: calc(var(--outer-margin) * 4);
+
 	.dgs {
 		height: 100px;
 		margin-right: 2rem;
@@ -88,10 +89,19 @@
 	.female {
 		width: 100px;
 		height: 100px;
+	}
+	@include mq($until: tablet) {
+		justify-content: flex-end;
+		width: 100%;
+		margin-right: calc(var(--outer-margin) * 2);
+		margin-bottom: calc(var(--outer-margin) * 4);
 
-		@include mq($until: tablet) {
-			width: 80px;
-			height: 80px;
+		.female {
+			width: 60px;
+			height: 60px;
+		}
+		.dgs {
+			height: 60px;
 		}
 	}
 }
@@ -122,5 +132,11 @@
 		}
 	}
 	@include mq($until: tablet) {
+		right: unset;
+		bottom: var(--outer-margin);
+		width: 100%;
+		margin: 0;
+		justify-content: center;
+		margin-left: calc(-1 * var(--outer-margin) * 2);
 	}
 }

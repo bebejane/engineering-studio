@@ -3,11 +3,27 @@ import Link from 'next/link';
 import s from './index.module.scss';
 import cn from 'classnames';
 import { GrDocumentPdf } from 'react-icons/gr';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 
-export default function Home() {
+const sections = ['leistungen', 'referenzen', 'impressum', 'datenschutz'];
+
+export default function About() {
+	const router = useRouter();
 	const [page, setPage] = useState<string | null>(null);
+
+	useEffect(() => {
+		const updatePage = () => {
+			const hash = window.location.hash.replace('#', '');
+			setPage(sections.includes(hash) ? hash : null);
+			window.scrollTo(0, 0);
+		};
+
+		updatePage();
+		window.addEventListener('hashchange', updatePage);
+		return () => window.removeEventListener('hashchange', updatePage);
+	}, [router.asPath]);
 
 	return (
 		<>
@@ -18,17 +34,11 @@ export default function Home() {
 				<div className={s.left}>
 					<nav className={s.menu}>
 						<ul>
-							<li
-								className={cn(page === 'services' && s.selected)}
-								onClick={() => setPage('services')}
-							>
-								Leistungen
+							<li className={cn(page === 'leistungen' && s.selected)}>
+								<a href='#leistungen'>Leistungen</a>
 							</li>
-							<li
-								className={cn(page === 'references' && s.selected)}
-								onClick={() => setPage('references')}
-							>
-								Referenzen
+							<li className={cn(page === 'referenzen' && s.selected)}>
+								<a href='#referenzen'>Referenzen</a>
 							</li>
 						</ul>
 					</nav>
@@ -52,7 +62,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={s.right}>
-					{page === 'services' && (
+					{page === 'leistungen' && (
 						<>
 							<h3>Leistungen</h3>
 							<section>
@@ -117,7 +127,7 @@ export default function Home() {
 							</section>
 						</>
 					)}
-					{page === 'references' && (
+					{page === 'referenzen' && (
 						<>
 							<h3>Referenzen</h3>
 							<section>
@@ -449,12 +459,12 @@ export default function Home() {
 							alt={'Female engineering'}
 						/>
 					</div>
-					<div className={s.impressum}>
-						<span onClick={() => setPage('impressum')}>Impressum</span>&nbsp;|&nbsp;
-						<span onClick={() => setPage('datenschutz')}>Datenschutz</span>
-					</div>
 				</>
 			)}
+			<div className={s.impressum}>
+				<a href='#impressum'>Impressum</a>&nbsp;|&nbsp;
+				<a href='#datenschutz'>Datenschutz</a>
+			</div>
 		</>
 	);
 }
