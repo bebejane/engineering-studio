@@ -132,11 +132,12 @@
 		}
 	}
 	@include mq($until: tablet) {
-		right: unset;
-		bottom: var(--outer-margin);
+		//right: unset;
+		//bottom: var(--outer-margin);
 		width: 100%;
-		margin: 0;
-		justify-content: center;
-		margin-left: calc(-1 * var(--outer-margin) * 2);
+		//margin: 0;
+		margin: calc(var(--outer-margin) * 2);
+		justify-content: flex-end;
+		//margin-left: calc(-1 * var(--outer-margin) * 2);
 	}
 }
