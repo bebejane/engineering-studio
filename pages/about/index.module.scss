@@ -32,6 +32,9 @@
 				}
 				li {
 					cursor: pointer;
+					a {
+						text-decoration: underline !important;
+					}
 				}
 				li.selected,
 				li:hover {

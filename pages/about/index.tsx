@@ -69,7 +69,7 @@ export default function About() {
 								<strong>Netzanschlussverfahren</strong>
 								<ul>
 									<li>
-										Erstellen und Prüfen von EPC Verträgen unter Einbindung der vergütungsrelevanten
+										Prüfen von EPC Verträgen unter Einbindung der vergütungsrelevanten
 										Netzanschlussthemen
 									</li>
 									<li>Netzverträglichkeitsprüfung und Netzanschlussverfahren</li>
@@ -78,7 +78,7 @@ export default function About() {
 										Inbetriebnahme mit allen Projektbeteiligten
 									</li>
 									<li>Begleitung Anlagenzertifikat</li>
-									<li>Anbindung und Auswahl Direktvermarkter</li>
+									<li>Schnittstelleneinbindung Direktvermarkter</li>
 									<li>Auswahl und Abschluss PPA</li>
 									<li>
 										Parkregelung und Initialmonitoring mit Netzbetreiber, Direktvermarkter und
@@ -95,18 +95,13 @@ export default function About() {
 										vergütungsrelevanten Prozessen
 									</li>
 									<li>
-										Unterstützung bei Entscheidungen die vergütungsrelevant sind bezogen auf EEG
-									</li>
-									<li>
 										Entwicklung und Optimierung von Geschäftsprozessen für EPC und PVA-Entwicklern
 									</li>
 									<li>
 										Qualitätssicherung PV mit Schwerpunkt Netzanschluss und Netzanschlussverfahren
 									</li>
 									<li>Mediation / Vermittlung Stakeholder</li>
-									<li>
-										Prozesseinbindung Netzanschlussverfahren auf Firmenebene / in Firmenstruktur
-									</li>
+									<li>Tools und Geschäftsprozesse für EPCs und Anlagenbetreiber</li>
 								</ul>
 							</section>
 							<section>
