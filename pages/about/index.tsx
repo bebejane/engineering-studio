@@ -178,8 +178,6 @@ export default function About() {
 									<br />
 									Inhaberin: Anne Meister
 									<br />
-									c/o Werkhausen Technik
-									<br />
 									Köpenicker Str. 187
 									<br />
 									10997 Berlin
@@ -202,8 +200,6 @@ export default function About() {
 								<strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</strong>
 								<p>
 									Anne Meister
-									<br />
-									c/o Werkhausen Technik
 									<br />
 									Köpenicker Str. 187
 									<br />
@@ -263,8 +259,6 @@ export default function About() {
 									Engineering Studio
 									<br />
 									Inhaberin: Anne Meister
-									<br />
-									c/o Werkhausen Technik
 									<br />
 									Köpenicker Str. 187
 									<br />
